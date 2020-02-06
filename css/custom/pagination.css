@@ -1,0 +1,59 @@
+@media screen and (max-width: 768px) {
+    span.pages{
+        font-size: 13px;
+    }
+    li .page-link{
+        font-size: 17px;
+    }
+
+    div .page-item .page-link:active,
+    div .page-item .page-link:focus,
+    div .page-item .page-link:hover{
+        font-size: 17px;
+    }
+
+    div .pagination-block{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
+
+.pagination-block{
+    margin-top: 44px;
+    margin-bottom: 194px;
+}
+
+.page-link{
+    border: none;
+    background: transparent;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 135%;
+    align-items: center;
+    color: #134577;
+}
+
+.page-item .page-link:active,
+.page-item .page-link:focus,
+.page-item .page-link:hover{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 135%;
+    display: flex;
+    align-items: center;
+    color: #6DAD4C;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    border: none;
+}
+
+.pages{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 135%;
+    color: #134577;
+}

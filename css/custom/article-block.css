@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+    .article span.text-shadow__title-text {
+        font-size: 20px;
+    }
+
+    p.article-text {
+        font-size: 14px;
+    }
+
+    span.news-date{
+        font-size: 13px;
+    }
+}
+
+.article {
+    border-bottom: 1px solid rgba(135, 152, 165, 0.39);
+    margin-bottom: 92px;
+}
+
+.article .text-shadow__title-text {
+    font-size: 45px;
+}
+
+.article .news-date {
+    margin: 32px 0 20px;
+}
+
+.article-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 135%;
+    color: #8798A5;
+}
+
+.article .instructions__link-wrapper {
+    margin: 36px 0 50px;
+}

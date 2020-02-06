@@ -1,0 +1,396 @@
+@media screen and (max-width: 1860px) {
+    div.header__advantages-row {
+        margin-top: 12%;
+    }
+}
+
+@media screen and (max-width: 1640px) {
+    div.header__advantages-row {
+        margin-top: 5%;
+    }
+
+    div .header__brandline_wrapper {
+        bottom: 18%;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    div.header__advantages-row {
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    div.header__advantages-row {
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    div.header__btn-group{
+        padding-bottom: 100px;
+    }
+}
+@media screen and (max-width: 1199px) {
+
+    div.header__advantages-row {
+        margin-top: 3%;
+    }
+
+    div .header__bottle-lg{
+        max-width: 85%;
+    }
+
+    h2.header__title {
+        font-size: 35px;
+    }
+
+    div.header__logotype-wrapper {
+        margin-right: -25px;
+    }
+
+    div .substance-advantages__item_text {
+        font-size: 15px;
+        line-height: 114%;
+    }
+
+    div .header__btn-group {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    div.header__advantages-row {
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    div .header__bottle-lg{
+        max-width: 100%;
+    }
+
+    h2.header__title {
+        font-size: 30px;
+    }
+
+    header.header {
+        padding-top: 32px;
+    }
+
+    div .header__advantages-row {
+        margin-top: 35%;
+    }
+
+    div .advantages__image-wrapper {
+        margin-left: -10px;
+    }
+
+    div .substance-advantages__item_text {
+        font-size: 19px;
+        line-height: 135%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    div .header__advantages-row {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div .btn-menu {
+        width: 53px;
+        height: 53px;
+    }
+
+    div .navigation__icon_bars {
+        width: 38.5px;
+        height: 38.5px;
+    }
+
+    div .inner-btn_block {
+        width: 47px;
+        height: 47px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header.header #mainDropdownMenu {
+        top: -17px;
+        right: -2px;
+        background: #FFFFFF;
+        box-shadow: -2px 4px 18px #A7B5BE;
+        border-radius: 25px;
+        width: 286px;
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 44px;
+    }
+
+    header.header .dropdown-item {
+        font-size: 15px;
+    }
+
+    header .header__brandline_wrapper {
+        bottom: 17%;
+    }
+
+    .header .menu-text {
+        padding: 17px 30px;
+    }
+
+    .header__bottle-sm {
+        margin-left: -15px;
+    }
+
+    div .header__btn-group {
+        padding: 10px 0;
+    }
+
+    div .substance-advantages__item_text {
+        font-size: 15px;
+        line-height: 114%;
+    }
+
+    h2.header__title {
+        font-size: 27px;
+    }
+
+    div .advantages__image-wrapper {
+        margin-left: 5px;
+    }
+
+    div .header__advantages-row {
+        margin-top: 35%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    div .header__advantages-row {
+        margin-top: 37%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    div .header__advantages-row {
+        margin-top: 39%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    div .img-sm {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    div .img-lg {
+        display: none;
+    }
+
+    div.navigation__logotype-wrapper {
+        width: 141px;
+        max-width: 100%;
+    }
+
+    header .header__brandline_wrapper {
+        bottom: 15%;
+    }
+
+    div .header__advantages-row {
+        margin-top: 67%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h2.header__title {
+        font-size: 25px;
+    }
+
+    header .header__brandline_wrapper {
+        bottom: 11%;
+    }
+
+    div .header__advantages-row {
+        margin-top: 65%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    div .header__advantages-row {
+        margin-top: 60%;
+    }
+}
+
+.header {
+    min-height: 665px;
+    padding-top: 71px;
+    max-width: 2000px;
+}
+
+.navigation__logotype-wrapper {
+    width: 227px;
+    max-width: 80%;
+}
+
+.btn-menu {
+    width: 123px;
+    height: 57px;
+    border-radius: 40px;
+    padding: 0;
+    margin-top: -12px;
+}
+
+.brandline {
+    top: 5%;
+    left: 15px;
+}
+
+.btn-menu:after {
+    display: none;
+}
+
+.inner-btn_block {
+    width: 109px;
+    height: 45px;
+    border-radius: 40px;
+}
+
+.bg_radial__menu {
+    background: radial-gradient(circle at 50% 0%, #FAECD5 10%, #8EB81F 70%, #81BC62);
+}
+
+.navigation__icon_bars {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.header__title-row {
+    margin-top: 350px;
+    margin-bottom: 32px;
+    height: 195px;
+}
+
+.header__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 130%;
+}
+
+.substance-advantages__item_text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 135%;
+}
+
+.download-pdf_text {
+    text-decoration: underline;
+}
+
+.header__btn-group {
+    padding-bottom: 70px;
+}
+
+.bg-header {
+    min-width: 840px;
+}
+
+.header__logotype-wrapper {
+    margin-right: -55px;
+}
+
+.img-sm {
+    display: none;
+}
+
+.img-lg {
+    display: block;
+}
+
+.header__advantages-row {
+    margin-top: 17%;
+}
+
+.header__bottle-lg {
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.header__bottle-sm {
+    max-width: 100%;
+    height: auto;
+}
+
+.header__brandline_wrapper {
+    width: 100%;
+    left: 0;
+    bottom: 21%;
+}
+
+.header #mainDropdownMenu {
+    top: -26px;
+    right: -11px;
+    background: #FFFFFF;
+    box-shadow: -2px 4px 18px #A7B5BE;
+    border-radius: 35px;
+    width: 328px;
+    height: auto;
+    padding-top: 92px;
+    padding-bottom: 42px;
+}
+
+.header .dropdown-item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 135%;
+    text-align: center;
+    color: #8798A5;
+}
+
+.dropdown-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.animation {
+    opacity: 0;
+    animation-name: visible;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes visible {
+    0% {
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    40%{
+        opacity: 0.4;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    70%{
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}

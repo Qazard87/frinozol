@@ -1,0 +1,134 @@
+@media screen and (max-width: 1199px) {
+    .questions .text-description {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .accordion .card {
+        width: 100%;
+        margin: 0;
+    }
+
+    .questions .questions__wrapper {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div .user-name {
+        font-size: 15px;
+    }
+
+    div .user-position {
+        font-size: 12px;
+    }
+
+    section.questions {
+        padding-top: 40px;
+    }
+
+    h5.info-block {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 135%;
+        color: #95C619;
+    }
+
+    section.questions .question-title {
+        margin: 83px 0 15px;
+    }
+
+    div.user-block__image-wrapper {
+        width: 70px;
+    }
+}
+
+.questions__bg-image {
+    height: 656px;
+}
+
+.questions__bg-image-sm {
+    width: 100%;
+    top: 60px;
+    left: -40px;
+    height: 240px;
+}
+
+.questions .question-title {
+    margin: 180px 0 51px;
+}
+
+.info-block {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 135%;
+    color: #95C619;
+}
+
+.questions .text-padding {
+    margin: 15px 0 40px;
+}
+
+.user-block__image-wrapper {
+    width: 122px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.questions .question-btn {
+    margin: 34px 0 56px;
+}
+
+.accordion {
+    background: transparent;
+    flex-wrap: wrap;
+}
+
+.card-header,
+.card {
+    background: transparent;
+}
+
+.card {
+    border: none;
+    width: 45%;
+    margin: 0 10px;
+}
+
+.accordion > .card .card-header {
+    margin-bottom: 0;
+}
+
+.questions__wrapper {
+    padding-top: 200px;
+}
+
+.user-name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 135%;
+    color: #134577;
+}
+
+.user-position {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 135%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(135, 152, 165, 0.52);
+}
+
+.card-body.text-description{
+    padding-left: 7px;
+}
+
+.card-body{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}

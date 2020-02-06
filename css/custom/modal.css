@@ -1,0 +1,90 @@
+@media screen and (max-width: 768px) {
+    div.modal .text-shadow__title-text {
+        font-size: 23px;
+    }
+
+    div .modal__btn-close {
+        width: 40px;
+        height: 40px;
+    }
+
+    div .modal-content {
+        padding: 28px 43px;
+    }
+
+    div .modal-header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    div .modal__flex-group {
+        width: 100%;
+    }
+
+    div.modal .close {
+        top: 15px;
+        right: 15px;
+    }
+
+    .modal-body {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.modal-form {
+    padding: 0;
+}
+
+.modal .close {
+    top: 28px;
+    right: 28px;
+}
+
+.modal__flex-group {
+    width: 47%;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-left: 15px;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal .text-shadow__title-text {
+    font-size: 30px;
+}
+
+.modal {
+    z-index: 12000;
+}
+
+.askQuestion {
+    width: 824px;
+    height: auto;
+    max-width: 95%;
+    box-shadow: -2px 4px 18px #A7B5BE;
+    border-radius: 35px;
+}
+
+.modal-content {
+    border-radius: 35px;
+    padding: 51px 70px;
+}
+
+.modal-label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 135%;
+    display: flex;
+    align-items: center;
+    color: #8798A5;
+}
+
+div .close {
+    opacity: 1;
+}

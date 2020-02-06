@@ -1,0 +1,143 @@
+
+@media screen and (max-width: 991px) {
+    header.header {
+        padding-top: 32px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div .btn-menu {
+        width: 53px;
+        height: 53px;
+    }
+
+    div .navigation__icon_bars {
+        width: 38.5px;
+        height: 38.5px;
+    }
+
+    div .inner-btn_block {
+        width: 47px;
+        height: 47px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header.header #mainDropdownMenu {
+        top: -17px;
+        right: -2px;
+        background: #FFFFFF;
+        box-shadow: -2px 4px 18px #A7B5BE;
+        border-radius: 25px;
+        width: 286px;
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 44px;
+    }
+
+    header.header .dropdown-item{
+        font-size: 15px;
+    }
+
+    header .header__brandline_wrapper {
+        bottom: 15%;
+    }
+
+    .header .menu-text {
+        padding: 17px 30px;
+    }
+
+    .header__bottle-sm {
+        margin-left: -15px;
+    }
+
+    div .header__btn-group {
+        padding: 10px 0;
+    }
+
+    div .substance-advantages__item_text {
+        font-size: 15px;
+        line-height: 114%;
+    }
+
+    h2.header__title {
+        font-size: 27px;
+    }
+
+    div .advantages__image-wrapper {
+        margin-left: 5px;
+    }
+}
+
+.header {
+    padding-top: 71px;
+}
+
+.navigation__logotype-wrapper {
+    width: 227px;
+    max-width: 80%;
+}
+
+.btn-menu {
+    width: 123px;
+    height: 57px;
+    border-radius: 40px;
+    padding: 0;
+    margin-top: -12px;
+}
+
+.btn-menu:after {
+    display: none;
+}
+
+.inner-btn_block {
+    width: 109px;
+    height: 45px;
+    border-radius: 40px;
+}
+
+.bg_radial__menu {
+    background: radial-gradient(circle at 50% 0%, #FAECD5 10%, #8EB81F 70%, #81BC62);
+}
+
+.navigation__icon_bars {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.download-pdf_text {
+    text-decoration: underline;
+}
+
+.header__btn-group {
+    padding: 37px 0;
+}
+
+.header #mainDropdownMenu {
+    top: -26px;
+    right: -11px;
+    background: #FFFFFF;
+    box-shadow: -2px 4px 18px #A7B5BE;
+    border-radius: 35px;
+    width: 328px;
+    height: auto;
+    padding-top: 92px;
+    padding-bottom: 42px;
+}
+
+.header .dropdown-item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 135%;
+    text-align: center;
+    color: #8798A5;
+}
+
+.dropdown-item:not(:last-child){
+    margin-bottom: 15px;
+}

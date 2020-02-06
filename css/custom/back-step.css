@@ -1,0 +1,19 @@
+.back-step__section_text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 100%;
+    color: #8798A5;
+}
+
+.btn-back{
+    background: transparent;
+    border: none;
+    padding-bottom: 46px;
+    padding-top: 67px;
+}
+
+.btn-back:focus{
+    box-shadow: none;
+    outline: none;
+}

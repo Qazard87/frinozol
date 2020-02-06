@@ -1,0 +1,17 @@
+@font-face {
+    font-display: swap;
+    font-family: "Calibri";
+    src: url("../../libs/frinosol-font/calibri_0.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "FloraC";
+    src: url("../../libs/frinosol-font/ofont.ru_FloraC.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "DINRoundPro";
+    src: url("../../libs/frinosol-font/DINRoundPro.otf") format("opentype");
+}

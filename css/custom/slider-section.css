@@ -1,0 +1,111 @@
+@media screen and (max-width: 1199px) {
+    div .slider-section,
+    div .bg-slider {
+        height: 665px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    div .inner-wrapper {
+        padding: 23px 0;
+    }
+
+    .slider-section div.title-position {
+        margin: 0;
+    }
+
+    div .slider-section,
+    div .bg-slider {
+        height: auto;
+    }
+
+    div .slider-section{
+        padding-bottom: 60px;
+    }
+
+    div .slider-section .carousel-control-prev,
+    div .slider-section .carousel-control-next {
+        top: unset;
+    }
+
+    div .slider-section .carousel-control-prev {
+        bottom: -20px;
+        left: 0;
+    }
+
+    div .slider-section .carousel-control-next {
+        bottom: -20px;
+        left: 70px;
+    }
+
+    .slider-section__link {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div .slider-section__link {
+        font-size: 14px;
+    }
+
+    div .slider-section .carousel-control-prev,
+    div section.slider-section .carousel-control-next{
+        bottom: -10px;
+    }
+
+    div .slider-section__image-wrapper{
+        max-width: 512px;
+    }
+
+    /*section.slider-section .title-wrapper {*/
+    /*    height: 65px;*/
+    /*}*/
+
+    div .slider-section .carousel-control-next {
+        left: 60px;
+    }
+}
+
+.bg-slider,
+.slider-section {
+    height: 760px;
+}
+
+/*.slider-section .title-wrapper {*/
+/*    height: 140px;*/
+/*}*/
+
+.slider-section__link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 135%;
+    letter-spacing: 0.1em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.slider-section .title-position {
+    margin: 45px;
+}
+
+.inner-wrapper {
+    padding: 0 100px;
+}
+
+.slider-section .carousel-control-prev,
+.slider-section .carousel-control-next {
+    bottom: unset;
+}
+
+.slider-section .carousel-control-prev {
+    top: 0;
+    left: 0;
+}
+
+.slider-section .carousel-control-next {
+    top: 15px;
+    right: 0;
+}

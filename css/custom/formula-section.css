@@ -1,0 +1,55 @@
+@media screen and (max-width: 991px) {
+    section .formula__title-wrapper {
+        height: 60px;
+    }
+
+
+    div .formula__lower-title {
+        margin-top: 43px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div .formula__title-outer {
+        top: 5%;
+    }
+
+    .formula .text-shadow__title-text {
+        font-size: 23px;
+    }
+    /*section .formula__title-wrapper {*/
+    /*    height: 65px;*/
+    /*}*/
+}
+
+@media screen and (max-width: 540px) {
+    div .formula__lower-title {
+        font-size: 16px;
+    }
+}
+
+/*.formula__title-wrapper {*/
+/*    height: 140px;*/
+/*}*/
+
+.formula__title-outer {
+    top: 5%;
+    left: 0;
+    width: 100%;
+}
+
+.formula__lower-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 170%;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.formula-sm,
+.formula-lg {
+    height: auto;
+    max-width: 100%;
+}

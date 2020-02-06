@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ru" @scroll="checkVisibility">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" crossorigin="anonymous">
+
+    <!--    Fontawesome  CSS-->
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+
+    <!--    Animate CSS   -->
+    <link rel="stylesheet" href="wow-animation/animate.min.css">
+
+    <!--    Custom  CSS-->
+    <link rel="stylesheet" href="css/custom/fonts.css">
+    <link rel="stylesheet" href="css/custom/main.css">
+    <link rel="stylesheet" href="css/custom/header-auto.css">
+    <link rel="stylesheet" href="css/custom/back-step.css">
+    <link rel="stylesheet" href="css/custom/news-block.css">
+    <link rel="stylesheet" href="css/custom/article-block.css">
+    <link rel="stylesheet" href="css/custom/footer.css">
+
+    <title>Фринозол</title>
+</head>
+<body>
+
+<div class="container-fluid px-0">
+
+    <!--    btn-to-top   -->
+    <div class="wrapper position-fixed">
+        <div class="container">
+            <button type="button" @click="moveToTop" :class="'btn-to-top ml-auto px-0 ' + visibility">
+                <i class="fas fa-chevron-circle-up fa-2x up-scroll"></i>
+            </button>
+        </div>
+    </div>
+
+    <!--   header   -->
+    <header class="header mx-auto">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-7 col-lg-8 on-top">
+                    <a class="d-flex flex-column" href="index.html" title="Фринозол">
+                        <div class="navigation__logotype-wrapper">
+                            <img src="img/logotype.svg" alt="Фринозол" class="w-100">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 d-none d-lg-block">
+                    <div class="header__logotype-wrapper d-flex justify-content-end">
+                        <img src="img/Vertex.svg" alt="Vertex">
+                    </div>
+                </div>
+                <div class="col-5 col-lg-2">
+                    <div class="header-menu position-fixed w-100 z-11" style="right: 0; z-index: 11000">
+                        <div class="container">
+                            <div class="dropdown position-relative d-flex">
+                                <button @click="checkBtnClass"
+                                        class="btn ml-auto dropdown-toggle bg-gradient-gray btn-menu wow flipInX on-top"
+                                        type="button"
+                                        id="dropdownMenuButton">
+
+                                    <div class="inner-btn_block bg-linear d-flex align-items-center m-auto">
+                                        <div class="navigation__icon_bars bg_radial__menu d-flex mr-md-2">
+                                            <i :class="'fas m-auto ' + icon"></i>
+                                        </div>
+                                        <span class="d-none d-md-block white">Меню</span>
+                                    </div>
+                                </button>
+                                <div :class="'dropdown-menu position-absolute header__dropdown-custom dropdown-menu-right ' + visible"
+                                     aria-labelledby="dropdownMenuButton" id="mainDropdownMenu">
+                                    <a class="dropdown-item" href="#forWhom">Кому подходит</a>
+                                    <a class="dropdown-item" href="#activeFormula">Формула активных веществ</a>
+                                    <a class="dropdown-item" href="#scheme">Форма выпуска и схема приема</a>
+                                    <a class="dropdown-item" href="#review">Отзывы пациентов</a>
+                                    <a class="dropdown-item" href="#questions">Вопросы и ответы</a>
+                                    <a class="dropdown-item" href="news.html">Новости и статьи</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--  Breadcrumbs  -->
+    <div class="back-step__section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="btn-back__wrapper">
+                        <a href="news.html" class="btn-back d-flex align-items-sm-center">
+                            <img src="img/back.svg" alt="back">
+                            <span class="back-step__section_text ml-2">Назад</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  article block  -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <article class="article">
+                    <h3 class="text-shadow__title text-flora blue d-flex align-items-end">
+                        <span class="blue text-shadow__title-text">
+                            Заголовок статьи: для тех, кто сталкивался с проблемой привыкания к
+                            сосудосуживающим <br>спреям.
+                        </span>
+                    </h3>
+                    <div class="article-content">
+                        <span class="news-date d-inline-block green">12 марта</span>
+                        <p class="article-text">
+                            Взрослым рекомендуемая суточная доза – 1-2 впрыскивания в каждый носовой ход 2-3 раза в
+                            сутки.
+                            Во время впрыскивания рекомендуется сделать легкий вдох через нос. Взрослым рекомендуемая
+                            суточная доза – 1-2 впрыскивания в каждый носовой ход 2-3 раза в сутки. Во время
+                            впрыскивания
+                            рекомендуется сделать легкий вдох через нос. Взрослым рекомендуемая суточная доза –
+                            1-2 впрыскивания в каждый носовой ход 2-3 раза в сутки. Во время впрыскивания
+                            рекомендуется сделать легкий вдох через нос. Взрослым рекомендуемая суточная доза
+                            – 1-2 впрыскивания в каждый носовой ход 2-3 раза в сутки.
+                        </p>
+                        <p class="article-text">
+                            Во время впрыскивания рекомендуется сделать легкий вдох через нос. Взрослым рекомендуемая
+                            суточная доза – 1-2 впрыскивания в каждый носовой ход 2-3 раза в сутки. Во время
+                            впрыскивания рекомендуется сделать легкий вдох через нос. Взрослым рекомендуемая суточная
+                            доза – 1-2 впрыскивания в каждый носовой ход 2-3 раза в сутки. Во время впрыскивания
+                            рекомендуется сделать легкий вдох через нос.
+                        </p>
+                        <div class="instructions__link-wrapper d-flex">
+                            <a href="#" class="d-flex instructions__link align-items-center">
+                                <img src="img/pdf2.png" alt="pdf" class="">
+                                <span class="instruction-text blue text-uppercase ml-2">Инструкция (PDF, 2mb)</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!--  footer-block  -->
+    <footer class="footer d-flex flex-column">
+        <div class="footer-top position-relative">
+
+            <!--   bg-image  -->
+            <div class="footer-img bottom-layer d-none d-md-flex">
+                <img src="img/footer-lg.png" alt="frinozol" class="footer-lg" width="2880px" height="1546px">
+            </div>
+            <div class="footer-img bottom-layer d-block d-md-none">
+                <img src="img/footer-sm.png" alt="frinozol" class="footer-sm" width="640px" height="844px">
+            </div>
+
+
+            <div class="buy-frinozol d-flex flex-column align-items-center justify-content-center position-absolute">
+                <a href="#" class="blue footer-img__logo d-flex wow flipInX">
+                    <img src="img/footer-logo.svg" alt="Frinozol" class="w-100">
+                </a>
+                <a href="#" class="question-btn bg-gradient-gray btn d-flex mb-3">
+                    <div class="bg_radial btn-inner d-flex px-4 py-2">
+                        <span class="menu-text white p-2">Купить в онлайн аптеке</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-2 d-flex order-1 my-2">
+                        <div class="footer__content footer__brand m-auto ">
+                            <a href="#" title="Вертекс">
+                                <img src="img/footer-vertex.svg" alt="vertex">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 h-100 col-lg-3 d-flex order-4 order-lg-2 my-2">
+                        <div class="footer__content text-uppercase mx-auto">
+                            <span class="text-uppercase footer-text">&copy; 2019, АО &laquo;ВЕРТЕКС&raquo;</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-3 d-flex justify-content-center justify-content-lg-end order-3 my-2">
+                        <div class="footer__content description">
+                            <span class="footer-text">Рег. уд.: 023156-02-15. На правах рекламы.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 d-flex justify-content-center justify-content-lg-end order-2 order-lg-4 my-2">
+                        <div class="footer__content description">
+                            <span class="footer-text">Россия, 199106, г. Санкт-Петербург,<br> Васильевский остров, 24-я линия, д. 27А</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!-- Optional JavaScript -->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<!-- Vue.js first, then custom js files -->
+<script src="js/vue/vue.js"></script>
+<script src="js/custom/check-device.js"></script>
+<script src="js/custom/carousel.js"></script>
+<script src="js/custom/scroll-top.js"></script>
+<script src="js/custom/menu-btn.js"></script>
+<script src="js/custom/validate-form.js"></script>
+<script src="wow-animation/wow.min.js"></script>
+<script> new WOW().init(); </script>
+</body>
+</html>

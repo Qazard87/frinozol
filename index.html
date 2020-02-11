@@ -76,31 +76,28 @@
                         <img src="img/Vertex.svg" alt="Vertex">
                     </div>
                 </div>
-                <div class="col-5 col-lg-2">
-                    <div class="header-menu position-fixed w-100 on-top" style="right: 0;">
-                        <div class="container">
-                            <div class="dropdown position-relative d-flex">
-                                <button @click="checkBtnClass"
-                                        class="btn ml-auto dropdown-toggle bg-gradient-gray btn-menu wow flipInX z-10"
-                                        type="button"
-                                        id="dropdownMenuButton">
-
-                                    <div class="inner-btn_block bg-linear d-flex align-items-center m-auto">
-                                        <div class="navigation__icon_bars bg_radial__menu d-flex mr-md-2">
-                                            <i :class="'fas m-auto ' + icon"></i>
-                                        </div>
-                                        <span class="d-none d-md-block white">Меню</span>
+                <div class="col-5 col-lg-2 d-flex justify-content-end">
+                    <div class="header-menu position-fixed on-top">
+                        <div class="dropdown position-relative d-flex">
+                            <button @click="checkBtnClass"
+                                    class="btn ml-auto dropdown-toggle bg-gradient-gray btn-menu wow flipInX z-10"
+                                    type="button"
+                                    id="dropdownMenuButton">
+                                <div class="inner-btn_block bg-linear d-flex align-items-center m-auto">
+                                    <div class="navigation__icon_bars bg_radial__menu d-flex mr-md-2">
+                                        <i :class="'fas m-auto ' + icon"></i>
                                     </div>
-                                </button>
-                                <div :class="'dropdown-menu position-absolute header__dropdown-custom dropdown-menu-right ' + visible"
-                                     aria-labelledby="dropdownMenuButton" id="mainDropdownMenu">
-                                    <a class="dropdown-item" href="#forWhom">Кому подходит</a>
-                                    <a class="dropdown-item" href="#activeFormula">Формула активных веществ</a>
-                                    <a class="dropdown-item" href="#scheme">Форма выпуска и схема приема</a>
-                                    <a class="dropdown-item" href="#review">Отзывы пациентов</a>
-                                    <a class="dropdown-item" href="#questions">Вопросы и ответы</a>
-                                    <a class="dropdown-item" href="news.html">Новости и статьи</a>
+                                    <span class="d-none d-md-block white">Меню</span>
                                 </div>
+                            </button>
+                            <div :class="'dropdown-menu position-absolute header__dropdown-custom dropdown-menu-right ' + visible"
+                                 aria-labelledby="dropdownMenuButton" id="mainDropdownMenu">
+                                <a class="dropdown-item" href="#forWhom">Кому подходит</a>
+                                <a class="dropdown-item" href="#activeFormula">Формула активных веществ</a>
+                                <a class="dropdown-item" href="#scheme">Форма выпуска и схема приема</a>
+                                <a class="dropdown-item" href="#review">Отзывы пациентов</a>
+                                <a class="dropdown-item" href="#questions">Вопросы и ответы</a>
+                                <a class="dropdown-item" href="news.html">Новости и статьи</a>
                             </div>
                         </div>
                     </div>

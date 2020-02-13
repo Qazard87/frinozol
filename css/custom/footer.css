@@ -15,16 +15,16 @@
 }
 
 @media screen and (max-width: 991px) {
-    div .footer__link{
+    div .footer__link {
         text-align: center;
         margin-bottom: 17px;
     }
 
-    div .left-side{
+    div .left-side {
         padding-left: 0;
     }
 
-    div .bottom-group{
+    div .bottom-group {
         padding-top: 28px;
     }
 }
@@ -80,15 +80,21 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 135%;
-    text-decoration-line: underline;
-    color: #8798A5;
+    color: rgba(135, 152, 165, 0.42);
     margin-bottom: 9px;
 }
 
-.bottom-group{
+.footer__link:hover,
+.footer__link:active,
+.footer__link:focus {
+    text-decoration: none;
+    color: rgba(135, 152, 165, 0.42);
+}
+
+.bottom-group {
     padding-top: 42px;
 }
 
-.left-side{
+.left-side {
     padding-left: 35px;
 }

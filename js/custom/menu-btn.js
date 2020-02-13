@@ -20,5 +20,12 @@ new Vue({
                 this.visible = 'd-block';
             }
         },
+    },
+    mounted(){
+        let  elements = document.querySelectorAll('.dropdown-item');
+        for(let i = 0; i< elements.length; i++){
+            let current = elements[i];
+            current.addEventListener('click', this.checkBtnClass);
+        }
     }
 });

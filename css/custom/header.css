@@ -71,6 +71,10 @@
         max-width: 100%;
     }
 
+    .header__bottle-sm {
+        margin: auto;
+    }
+
     h2.header__title {
         font-size: 30px;
     }
@@ -80,7 +84,7 @@
     }
 
     div .header__advantages-row {
-        margin-top: 35%;
+        margin-top: 7%;
     }
 
     div .advantages__image-wrapper {
@@ -95,26 +99,10 @@
 
 @media screen and (max-width: 890px) {
     div .header__advantages-row {
-        margin-top: 30%;
+        margin-top: 0%;
     }
 }
 
-@media screen and (max-width: 767px) {
-    div .btn-menu {
-        width: 53px;
-        height: 53px;
-    }
-
-    div .navigation__icon_bars {
-        width: 38.5px;
-        height: 38.5px;
-    }
-
-    div .inner-btn_block {
-        width: 47px;
-        height: 47px;
-    }
-}
 
 @media screen and (max-width: 768px) {
 
@@ -142,10 +130,6 @@
         padding: 17px 30px;
     }
 
-    .header__bottle-sm {
-        margin-left: -15px;
-    }
-
     div .header__btn-group {
         padding: 10px 0;
     }
@@ -164,19 +148,36 @@
     }
 
     div .header__advantages-row {
-        margin-top: 35%;
+        margin-top: 0%;
     }
 }
 
-@media screen and (max-width: 550px) {
+
+@media screen and (max-width: 767px) {
+
     div .header__advantages-row {
-        margin-top: 37%;
+        margin-top: 40%;
+    }
+
+    div .btn-menu {
+        width: 53px;
+        height: 53px;
+    }
+
+    div .navigation__icon_bars {
+        width: 38.5px;
+        height: 38.5px;
+    }
+
+    div .inner-btn_block {
+        width: 47px;
+        height: 47px;
     }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 530px) {
     div .header__advantages-row {
-        margin-top: 39%;
+        margin-top: 45%;
     }
 }
 
@@ -202,7 +203,7 @@
     }
 
     div .header__advantages-row {
-        margin-top: 67%;
+        margin-top: 70%;
     }
 }
 
@@ -216,13 +217,7 @@
     }
 
     div .header__advantages-row {
-        margin-top: 65%;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    div .header__advantages-row {
-        margin-top: 60%;
+        margin-top: 67%;
     }
 }
 

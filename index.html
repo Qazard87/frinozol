@@ -80,7 +80,7 @@
                     <div class="header-menu position-fixed on-top">
                         <div class="dropdown position-relative d-flex">
                             <button @click="checkBtnClass"
-                                    class="btn ml-auto dropdown-toggle bg-gradient-gray btn-menu wow flipInX z-10"
+                                    class="btn ml-auto dropdown-toggle bg-gradient-gray btn-menu z-10"
                                     type="button"
                                     id="dropdownMenuButton">
                                 <div class="inner-btn_block bg-linear d-flex align-items-center m-auto">
@@ -90,7 +90,7 @@
                                     <span class="d-none d-md-block white">Меню</span>
                                 </div>
                             </button>
-                            <div :class="'dropdown-menu position-absolute header__dropdown-custom dropdown-menu-right ' + visible"
+                            <div class="dropdown-menu position-absolute header__dropdown-custom dropdown-menu-right d-none"
                                  aria-labelledby="dropdownMenuButton" id="mainDropdownMenu">
                                 <a class="dropdown-item" href="#forWhom">Кому подходит</a>
                                 <a class="dropdown-item" href="#activeFormula">Формула активных веществ</a>

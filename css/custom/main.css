@@ -109,10 +109,18 @@ body {
     color: #81BC62;
 }
 
+.color-red{
+    color: lightsalmon;
+}
+
 .btn {
     border: none;
     padding: 7px;
     border-radius: 40px;
+}
+
+.border-error{
+    border: 2px solid lightsalmon;
 }
 
 .menu-text {

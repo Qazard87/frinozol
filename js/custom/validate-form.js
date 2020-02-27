@@ -11,7 +11,7 @@ let form = new Vue({
             name: "",
             email: "",
             text: "",
-        }
+        },
     },
     methods: {
         validateForm: function () {
@@ -55,6 +55,45 @@ let form = new Vue({
             }
             return true;
         },
+        fetchData: async function () {
+            let data = {
+                name: this.userName,
+                email: this.email,
+                text: this.text,
+            };
+            try {
+                let response = await fetch('http://funroger20.temp.swtest.ru/form-checker/checker.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    mode: 'cors',
+                    body: JSON.stringify(data),
+                });
+
+                let result = await response.json();
+
+                switch (result.err) {
+                    case 0:
+                        (function xhrSimulate() {
+                            setTimeout(() => $("#askModal [data-dismiss=modal]").trigger({type: "click"}), 0)
+                        }());
+                        document.querySelector(".wrapper-modal").classList.remove("d-none");
+                        break;
+                    case 1:
+                        this.border.name = " border-error";
+                        break;
+                    case 2:
+                        this.border.email = " border-error";
+                        break;
+                    case 3:
+                        this.border.text = " border-error";
+                }
+            } catch (e) {
+                alert(e.message)
+            }
+        },
         checkForm: function (e) {
             e.preventDefault();
             this.validateForm();
@@ -63,25 +102,19 @@ let form = new Vue({
             }
             this.fetchData();
         },
-        fetchData: async function () {
-            let data = {
-                name: this.userName,
-                email: this.email,
-                text: this.text,
-            };
-            let response = await fetch('http://funroger20.temp.swtest.ru/form-checker/checker.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                mode: 'cors',
-                body: JSON.stringify(data)
-            });
-
-            let result = await response.json();
-            let jsObj = JSON.parse(result);
-            alert(jsObj.message + ". Ответ придет на email: " + this.email + ".");
-        },
     },
+});
+
+let answer = new Vue({
+    el: ".wrapper-modal",
+    data: {
+        message: "Ваш вопрос отправлен",
+        description: "Ответ придет на указанную вами почту",
+    },
+    methods: {
+        closeModal: function () {
+            let windowModal = document.querySelector(".wrapper-modal");
+            windowModal.classList.add("d-none");
+        }
+    }
 });

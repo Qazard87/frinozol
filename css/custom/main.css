@@ -109,10 +109,6 @@ body {
     color: #81BC62;
 }
 
-.color-red{
-    color: lightsalmon;
-}
-
 .btn {
     border: none;
     padding: 7px;
@@ -120,7 +116,12 @@ body {
 }
 
 .border-error{
-    border: 2px solid lightsalmon;
+    border: 2px solid red;
+    color: red;
+}
+
+.border-error div{
+    color: red;
 }
 
 .menu-text {

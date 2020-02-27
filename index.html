@@ -793,16 +793,15 @@
                         <div class="form-group modal__flex-group">
                             <label class="d-flex flex-column">
                                 <span class="modal-label">Как вас зовут?</span>
-                                <input v-model="userName" type="text" name="userName" :class="'form-control' + border.name">
+                                <input v-model="userName" type="text" name="userName"
+                                       :class="'form-control' + border.name">
                             </label>
-                            <span class="color-red" v-text="errors.name"></span>
                         </div>
                         <div class="form-group modal__flex-group">
                             <label class="d-flex flex-column">
                                 <span class="modal-label">Email</span>
                                 <input v-model="email" type="email" name="email" :class="'form-control' + border.email">
                             </label>
-                            <span class="color-red" v-text="errors.email"></span>
                         </div>
                     </div>
                     <div class="form-group">
@@ -811,10 +810,10 @@
                             <textarea v-model="text" name="userQuestion" :class="'form-control w-100' + border.text"
                                       style="min-height: 128px"></textarea>
                         </label>
-                        <span class="color-red" v-text="errors.text"></span>
                     </div>
                     <div class="form-group d-flex">
-                        <button type="submit" @click="checkForm" class="question-btn bg-gradient-gray btn mx-auto ml-md-0">
+                        <button type="submit" @click="checkForm"
+                                class="question-btn bg-gradient-gray btn mx-auto ml-md-0">
                             <div class="bg_radial btn-inner">
                                 <span class="menu-text bg_radial white">Задать вопрос</span>
                             </div>
@@ -823,6 +822,27 @@
                 </form>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="wrapper-modal d-none">
+    <div class="modal-window">
+        <button @click="closeModal" type="button" class="modal-close position-absolute" data-dismiss="modal"
+                aria-label="Close">
+                    <span class="d-inline-block">
+                        <img src="img/modal-close.svg" class="modal__btn-close" alt="X" width="54" height="54">
+                    </span>
+        </button>
+        <div class="modal-content">
+            <h3 class="modal-title blue text-center text-shadow__title-text text-flora my-2" v-text="message"></h3>
+            <p class="text-description text-center my-2" v-text="description"></p>
+        </div>
+        <button type="submit" @click="closeModal"
+                class="question-btn bg-gradient-gray btn mx-auto mb-5">
+            <div class="bg_radial btn-inner">
+                <span class="menu-text bg_radial white">Продолжить</span>
+            </div>
+        </button>
     </div>
 </div>
 

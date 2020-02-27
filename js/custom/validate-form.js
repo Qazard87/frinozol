@@ -1,7 +1,18 @@
 "use strict"
 
+document.addEventListener('DOMContentLoaded', function () {
+    let btns = document.querySelectorAll('.open-modal__btn');
+    for (let i = 0; i < btns.length; i++) {
+        let current = btns[i];
+        current.addEventListener("click", function () {
+            let windowModal = document.querySelector(".modal-ask");
+            windowModal.classList.remove("d-none");
+        });
+    };
+});
+
 let form = new Vue({
-    el: ".modal-form",
+    el: ".modal-ask",
     data: {
         userName: "",
         email: "",
@@ -14,6 +25,10 @@ let form = new Vue({
         },
     },
     methods: {
+        closeModalAsk: function () {
+            let windowModal = document.querySelector(".modal-ask");
+            windowModal.classList.add("d-none");
+        },
         validateForm: function () {
             this.errors = {};
             this.border = {
@@ -76,9 +91,7 @@ let form = new Vue({
 
                 switch (result.err) {
                     case 0:
-                        (function xhrSimulate() {
-                            setTimeout(() => $("#askModal [data-dismiss=modal]").trigger({type: "click"}), 0)
-                        }());
+                        document.querySelector(".modal-ask").classList.add("d-none");
                         document.querySelector(".wrapper-modal").classList.remove("d-none");
                         break;
                     case 1:

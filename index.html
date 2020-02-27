@@ -483,8 +483,7 @@
                         </div>
                     </div>
 
-                    <button class="question-btn bg-gradient-gray btn d-none d-lg-block" data-toggle="modal"
-                            data-target="#askModal">
+                    <button class="question-btn open-modal__btn bg-gradient-gray btn d-none d-lg-block">
                         <div class="bg_radial btn-inner">
                             <span class="menu-text bg_radial white">Задать вопрос</span>
                         </div>
@@ -687,8 +686,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="question-btn bg-gradient-gray btn d-block d-lg-none mx-auto" data-toggle="modal"
-                                data-target="#askModal">
+                        <button class="question-btn open-modal__btn bg-gradient-gray btn d-block d-lg-none mx-auto">
                             <div class="bg_radial btn-inner">
                                 <span class="menu-text bg_radial white">Задать вопрос</span>
                             </div>
@@ -773,61 +771,55 @@
 </div>
 
 
-<!--Modal window-->
-<div class="modal fade" id="askModal" tabindex="-1" role="dialog" aria-labelledby="askModalLabel" aria-hidden="true">
-    <div class="modal-dialog askQuestion" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title blue text-shadow__title-text text-flora" id="askModalLabel">
-                    Задать вопрос
-                </h3>
-                <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" class="d-inline-block">
+<!--Modal windows-->
+<div class="modal-ask d-none">
+    <div class="modal-window">
+        <button @click="closeModalAsk" type="button" class="close close-ask position-absolute" data-dismiss="modal"
+                aria-label="Close">
+                    <span class="d-inline-block">
                         <img src="img/modal-close.svg" class="modal__btn-close" alt="X" width="54" height="54">
                     </span>
+        </button>
+        <h3 class="modal-title blue text-shadow__title-text text-flora" id="askModalLabel">
+            Задать вопрос
+        </h3>
+        <form action="" method="post" class="modal-form" @submit="checkForm">
+            <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                <div class="form-group modal__flex-group">
+                    <label class="d-flex flex-column">
+                        <span class="modal-label">Как вас зовут?</span>
+                        <input v-model="userName" type="text" name="userName"
+                               :class="'form-control' + border.name">
+                    </label>
+                </div>
+                <div class="form-group modal__flex-group">
+                    <label class="d-flex flex-column">
+                        <span class="modal-label">Email</span>
+                        <input v-model="email" type="email" name="email" :class="'form-control' + border.email">
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="d-flex flex-column">
+                    <span class="modal-label">Ваш вопрос:</span>
+                    <textarea v-model="text" name="userQuestion" :class="'form-control w-100' + border.text"
+                              style="min-height: 128px"></textarea>
+                </label>
+            </div>
+            <div class="form-group d-flex">
+                <button type="submit" @click="checkForm"
+                        class="question-btn bg-gradient-gray btn mx-auto ml-md-0">
+                    <div class="bg_radial btn-inner">
+                        <span class="menu-text bg_radial white">Задать вопрос</span>
+                    </div>
                 </button>
             </div>
-            <div class="modal-body">
-                <form action="" method="post" class="modal-form" @submit="checkForm">
-                    <div class="d-flex flex-column flex-md-row justify-content-md-between">
-                        <div class="form-group modal__flex-group">
-                            <label class="d-flex flex-column">
-                                <span class="modal-label">Как вас зовут?</span>
-                                <input v-model="userName" type="text" name="userName"
-                                       :class="'form-control' + border.name">
-                            </label>
-                        </div>
-                        <div class="form-group modal__flex-group">
-                            <label class="d-flex flex-column">
-                                <span class="modal-label">Email</span>
-                                <input v-model="email" type="email" name="email" :class="'form-control' + border.email">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="d-flex flex-column">
-                            <span class="modal-label">Ваш вопрос:</span>
-                            <textarea v-model="text" name="userQuestion" :class="'form-control w-100' + border.text"
-                                      style="min-height: 128px"></textarea>
-                        </label>
-                    </div>
-                    <div class="form-group d-flex">
-                        <button type="submit" @click="checkForm"
-                                class="question-btn bg-gradient-gray btn mx-auto ml-md-0">
-                            <div class="bg_radial btn-inner">
-                                <span class="menu-text bg_radial white">Задать вопрос</span>
-                            </div>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
+        </form>
     </div>
 </div>
-
 <div class="wrapper-modal d-none">
     <div class="modal-window">
-        <button @click="closeModal" type="button" class="modal-close position-absolute" data-dismiss="modal"
+        <button @click="closeModal" type="button" class="close modal-close position-absolute" data-dismiss="modal"
                 aria-label="Close">
                     <span class="d-inline-block">
                         <img src="img/modal-close.svg" class="modal__btn-close" alt="X" width="54" height="54">

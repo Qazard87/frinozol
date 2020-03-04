@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let btns = document.querySelectorAll('.open-modal__btn');
     for (let i = 0; i < btns.length; i++) {
         let current = btns[i];
-        current.addEventListener("click", function () {
+        current.addEventListener("click", function (e) {
+            e.preventDefault();
             let windowModal = document.querySelector(".modal-ask");
             windowModal.classList.remove("d-none");
         });

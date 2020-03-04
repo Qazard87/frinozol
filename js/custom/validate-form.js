@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 document.addEventListener('DOMContentLoaded', function () {
     let btns = document.querySelectorAll('.open-modal__btn');

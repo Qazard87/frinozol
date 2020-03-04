@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/custom/news-block.css">
     <link rel="stylesheet" href="css/custom/article-block.css">
     <link rel="stylesheet" href="css/custom/footer.css">
+    <link rel="stylesheet" href="css/custom/modal.css">
 
     <title>Фринозол</title>
 </head>
@@ -69,12 +70,14 @@
                             </button>
                             <div class="dropdown-menu position-absolute header__dropdown-custom dropdown-menu-right d-none"
                                  aria-labelledby="dropdownMenuButton" id="mainDropdownMenu">
+                                <a class="dropdown-item" href="index.html">Главная</a>
                                 <a class="dropdown-item" href="index.html#forWhom">Кому подходит</a>
                                 <a class="dropdown-item" href="index.html#activeFormula">Формула активных веществ</a>
                                 <a class="dropdown-item" href="index.html#scheme">Форма выпуска и схема приема</a>
                                 <a class="dropdown-item" href="index.html#review">Отзывы пациентов</a>
                                 <a class="dropdown-item" href="index.html#questions">Вопросы и ответы</a>
                                 <a class="dropdown-item" href="news.html">Новости и статьи</a>
+                                <a class="dropdown-item open-modal__btn" href="#">Задать вопрос</a>
                             </div>
                         </div>
                     </div>
@@ -218,6 +221,72 @@
     </footer>
 </div>
 
+<!--Modal windows-->
+<div class="modal-ask d-none">
+    <div class="modal-window">
+        <button @click="closeModalAsk" type="button" class="close close-ask position-absolute" data-dismiss="modal"
+                aria-label="Close">
+                    <span class="d-inline-block">
+                        <img src="img/modal-close.svg" class="modal__btn-close" alt="X" width="54" height="54">
+                    </span>
+        </button>
+        <h3 class="modal-title blue text-shadow__title-text text-flora" id="askModalLabel">
+            Задать вопрос
+        </h3>
+        <form action="" method="post" class="modal-form" @submit="checkForm">
+            <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                <div class="form-group modal__flex-group">
+                    <label class="d-flex flex-column">
+                        <span class="modal-label">Как вас зовут?</span>
+                        <input v-model="userName" type="text" name="userName"
+                               :class="'form-control' + border.name">
+                    </label>
+                </div>
+                <div class="form-group modal__flex-group">
+                    <label class="d-flex flex-column">
+                        <span class="modal-label">Email</span>
+                        <input v-model="email" type="email" name="email" :class="'form-control' + border.email">
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="d-flex flex-column">
+                    <span class="modal-label">Ваш вопрос:</span>
+                    <textarea v-model="text" name="userQuestion" :class="'form-control w-100' + border.text"
+                              style="min-height: 128px"></textarea>
+                </label>
+            </div>
+            <div class="form-group d-flex">
+                <button type="submit" @click="checkForm"
+                        class="question-btn bg-gradient-gray btn mx-auto ml-md-0">
+                    <div class="bg_radial btn-inner">
+                        <span class="menu-text bg_radial white">Задать вопрос</span>
+                    </div>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="wrapper-modal d-none">
+    <div class="modal-window">
+        <button @click="closeModal" type="button" class="close modal-close position-absolute" data-dismiss="modal"
+                aria-label="Close">
+                    <span class="d-inline-block">
+                        <img src="img/modal-close.svg" class="modal__btn-close" alt="X" width="54" height="54">
+                    </span>
+        </button>
+        <div class="modal-content">
+            <h3 class="modal-title blue text-center text-shadow__title-text text-flora my-2" v-text="message"></h3>
+            <p class="text-description text-center my-2" v-text="description"></p>
+        </div>
+        <button type="submit" @click="closeModal"
+                class="question-btn bg-gradient-gray btn mx-auto mb-5">
+            <div class="bg_radial btn-inner">
+                <span class="menu-text bg_radial white">Продолжить</span>
+            </div>
+        </button>
+    </div>
+</div>
 
 <!-- Optional JavaScript -->
 
@@ -234,6 +303,7 @@
 <script src="js/custom/carousel.js"></script>
 <script src="js/custom/scroll-top.js"></script>
 <script src="js/custom/menu-btn.js"></script>
+<script src="js/custom/validate-form.js"></script>
 <script src="wow-animation/wow.min.js"></script>
 <script> new WOW().init(); </script>
 </body>

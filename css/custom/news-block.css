@@ -18,6 +18,11 @@
     div .news .text-shadow__title{
         margin-bottom: 0;
     }
+
+    div .img-wrapper{
+        width: 100%;
+        margin: 15px 0 20px 0;
+    }
 }
 
 .news .text-shadow__title{
@@ -58,7 +63,6 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 135%;
-    margin-bottom: 9px;
 }
 
 .news-title{
@@ -78,4 +82,14 @@
     letter-spacing: 0.1em;
     text-decoration-line: underline;
     text-transform: uppercase;
+}
+
+.img-wrapper{
+    width: 691px;
+    margin: 32px 0 45px 0;
+}
+
+.article-img{
+    width: 100%;
+    height: auto;
 }
